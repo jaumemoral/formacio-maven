@@ -2,21 +2,46 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.upc.fib.inlab</groupId>
-	<artifactId>fibonacciweb</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<artifactId>fibonacci</artifactId>
+	<version>0.0.1</version>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Internal Releases</name>
+			<url>https://codi.fib.upc.edu/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Internal Snapshots</name>
+			<url>https://codi.fib.upc.edu/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>	
+	
 	<dependencies>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-			<scope>provided</scope>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>			
 		</dependency>
 		<dependency>
-			<groupId>edu.upc.fib.inlab</groupId>
-			<artifactId>fibonacci</artifactId>
-			<version>0.0.1</version>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 		</dependency>
-	</dependencies>
-
+	</dependencies>	
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
