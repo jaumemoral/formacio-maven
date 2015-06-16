@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.upc.fib.inlab</groupId>
 	<artifactId>fibonacci</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.3</version>
 
 	<distributionManagement>
 		<repository>
@@ -31,17 +31,4 @@
 			<version>1.2.17</version>
 		</dependency>
 	</dependencies>	
-	
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
