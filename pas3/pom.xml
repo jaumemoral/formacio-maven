@@ -5,6 +5,14 @@
 	<artifactId>fibonacci</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>Internal Releases</name>
+			<url>https://codi.fib.upc.edu/nexus/content/repositories/releases</url>
+		</repository>
+	</repositories>	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
